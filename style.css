@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+}
+@font-face {
+    font-family: wano;
+    src: url(./WanoQuin-ExtraBold.otf);
+}
+
+body{
+    color: white;
+    font-family: "Lato", sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    border-bottom: 1px solid rgba(255, 225, 225, .1);
+    z-index: 1000;
+}
+.navbar span{
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, #fff);
+    animation: animate 5s infinite linear; 
+}
+@keyframes animate {
+    0%{
+        left: 0;
+        transform: translate(-100%);
+    }
+    100%{
+        left: 100%;
+        transform: translate(0%);
+    }
+}
+li{
+    list-style: none;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.menu{
+    display: flex;
+    gap: 5rem;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.btn{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.logo{
+    text-transform: capitalize;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: wano;
+
+}
+.video-section video{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+.img-container{
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100vh;
+}
+.img{
+    object-fit: cover;
+    height: 100%;
+}
